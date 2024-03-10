@@ -5,11 +5,11 @@ export default function ProtectedRoute({ children }) {
   const navigate = useNavigate();
   const user = localStorage.app_auth_token
 
-  useEffect(() => {
-    if (!user) {
-      navigate('/login');
-    }
-  }, [])
+  // useEffect(() => {
+  //   if (!user) {
+  //     navigate('/login');
+  //   }
+  // }, [])
 
   return children;
 }
